@@ -201,6 +201,8 @@ textarea {
     background-color: lighten(@color__form--background, 10%);
     border-bottom: 1px solid transparent;
     color: #ffffff;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 
@@ -213,17 +215,6 @@ textarea {
 .signupform__label {
     margin: 10px;
 }
-
-.socialicons__social-link {
-    background-color: @color__socialicons--icon--background;
-    border: 1px solid @color__socialicons--border;
-    color: @color__socialicons--text;
-    &:hover {
-        color: @color__socialicons--icon--hover;
-        background-color: @color__socialicons--icon--background--hover;
-    }
-}
-
 
 .gallery__caption .image-title {
     font-size: @font-swatch3-font-size;

@@ -35,7 +35,6 @@ button,
 .button {
 	background-color: @color__button--background;
 	color: @color__button--text;
-	border: 1px solid @color__button--border;
 	&:hover {
 		background-color: @color__button--background--hover;
 		color: @color__button--text--hover;
@@ -63,7 +62,9 @@ button,
 }
 
 .feature {
-	background-color: @color__feature--background;
+	&__content-wrap {
+		background-color: @color__feature-content--background;
+	}
 	&__headline {
 		color: @color__feature-headline--text;
 	}
@@ -100,5 +101,17 @@ form,
 	}
 	&__account-link {
 		color: @color__twitter-account-name--text;
+	}
+}
+
+.socialicons {
+	&__social-link {
+		background-color: @color__socialicons--icon--background;
+    	border: 1px solid @color__socialicons--border;
+    	color: @color__socialicons--text;
+    	&:hover {
+        	color: @color__socialicons--icon--hover;
+        	background-color: @color__socialicons--icon--background--hover;
+    	}
 	}
 }
