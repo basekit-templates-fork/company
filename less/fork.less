@@ -1,3 +1,7 @@
+
+
+
+
 // -----------------------------
 // 1.  #Header
 // -----------------------------
@@ -52,6 +56,9 @@
     }
 }
 
+
+
+
 // -----------------------------
 // 3.  #Feature
 // -----------------------------
@@ -68,6 +75,9 @@
     text-shadow: 2px 2px fade(#333333,30%);
 }
 
+
+
+
 // -----------------------------
 // 4.  #Button
 // -----------------------------
@@ -79,6 +89,19 @@
     -moz-box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
     box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
 }
+
+button, .button {
+    color: @color__button--text;
+}
+
+.signupform__button,
+.blogsearch__button,
+.contactform__button {
+    color: #ffffff;
+}
+
+
+
 
 // -----------------------------
 // 4.  #Contact Form
@@ -128,6 +151,75 @@ textarea {
     color: #ffffff;
 }
 
+
+
+
 // -----------------------------
-// 2.  #Navigation
+// 4.  #Social Icons
 // -----------------------------
+
+.signupform__label {
+    margin: 10px;
+}
+
+.socialicons__social-link {
+    background-color: @color__socialicons--icon--background;
+    border: 1px solid @color__socialicons--border;
+    color: @color__socialicons--text;
+    &:hover {
+        color: @color__socialicons--icon--hover;
+        background-color: @color__socialicons--icon--background--hover;
+    }
+}
+
+
+.gallery__caption .image-title {
+    font-size: @font-swatch3-font-size;
+    line-height: @font-swatch3-line-height;
+}
+
+
+
+
+// -----------------------------
+// 2.  #Blog
+// -----------------------------
+
+.blogpostlist__title-link {
+    color: @color__h1--text;
+}
+
+
+
+
+// -----------------------------
+// 2.  #Ecommerce
+// -----------------------------
+
+.ecomproductslist__form {
+    padding: 10px;
+}
+
+.ecomproductslist__button {
+    padding: 1px 30px;
+    color: #ffffff;
+}
+
+.ecomproductslist__product-item-title,
+.ecomproductslist__button,
+.ecomproduct__legend,
+.ecomproductslist__title-link,
+.ecomfeaturedproducts__title-link {
+    color: @color__h1--text;
+}
+
+.ecombasketsummary__summary-form {
+    background-color: transparent;
+}
+
+.ecomproductslist__listing-title:after, 
+.ecombasketsummary__summary-title:after, 
+.ecomproduct__product-title:after, 
+.ecomfeaturedproducts__listing-title:after {
+    display: none;
+}
