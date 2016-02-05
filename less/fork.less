@@ -7,9 +7,9 @@
 // -----------------------------
 
 .header-wrapper {
-    padding: 0 2%;
+    padding: 0 2%!important;
     @media @tablet {
-        padding: 2%;
+        padding: 2%!important;
     }
 }
 
@@ -62,9 +62,6 @@
 .navigation-toggle {
     background-color: transparent;
     box-shadow: none;
-    &:hover {
-        background-color: transparent;
-    }
     &:before {
         background: @color-swatch1;
         box-shadow: 0 6px 0 @color-swatch1;
@@ -86,14 +83,6 @@
     &:after {
         background: @color-swatch1;
     }
-}
-
-.navigation-toggle:hover:before {
-    background-color: @color-swatch1;
-}
-
-.navigation-toggle:hover:after {
-    background-color: @color-swatch1;
 }
 
 
