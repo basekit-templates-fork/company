@@ -12,10 +12,10 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#1A7391",
-            "color3":"#2b3040",
-            "color4":"#2b3040",
-            "color5":"#2b3040",
+            "color2":"#50b94e",
+            "color3":"#283b5e",
+            "color4":"#0091da",
+            "color5":"#9f9f9f",
             "color6":"#AFAFAF",
             "color7":"#D2D2D2"
         },
@@ -95,7 +95,7 @@
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "32px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch5",
             "letter-spacing": "0px"
         },
         "font6": {
@@ -114,15 +114,15 @@
             "font-size": "14px",
             "font-weight": "300",
             "line-height": "inherit",
-            "color": "@color-swatch4",
+            "color": "@color-swatch1",
             "letter-spacing": "1px",
-            "background-color": "@color-swatch3",
+            "background-color": "transparent",
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "42px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "50px",
             "color": "@color-swatch1",
             "letter-spacing": "1px"
@@ -140,7 +140,7 @@
             "font-size": "26px",
             "font-weight": "400",
             "line-height": "30px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch1",
             "letter-spacing": "3px"
         }
     },
@@ -193,10 +193,10 @@
         },
         "button": {
             "color__button--background": "transparent",
-            "color__button--background--hover": "@color__primary",
+            "color__button--background--hover": "lighten(@color-swatch3, 10%)",
             "color__button--text": "@font-swatch7-color",
             "color__button--text--hover": "@color-swatch1",
-            "color__button--border": "@color-swatch3",
+            "color__button--border": "lighten(@color-swatch3, 10%)",
             "font__button--font-family" : "@font-swatch7-font-family",
             "font__button--font-size" : "@font-swatch7-font-size",
             "font__button--font-weight" : "@font-swatch7-font-weight",
@@ -204,15 +204,15 @@
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
         "header": {
-            "color__header--background": "@color-swatch1"
+            "color__header--background": "@color-swatch3"
         },
         "footer": {
-            "color__footer--background": "@color__primary"
+            "color__footer--background": "@color-swatch3"
         },
         "navigation": {
-            "color__navigation--text": "@font-swatch6-color",
-            "color__navigation--text--hover": "@font-swatch6-color",
-            "color__navigation--text--selected": "@font-swatch6-color-hover",
+            "color__navigation--text": "#ffffff",
+            "color__navigation--text--hover": "#ffffff",
+            "color__navigation--text--selected": "#ffffff",
             "font__navigation--font-family" : "@font-swatch6-font-family",
             "font__navigation--font-size" : "@font-swatch6-font-size",
             "font__navigation--font-weight" : "@font-swatch6-font-weight",
@@ -220,13 +220,13 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
         },
         "feature": {
-            "color__feature-content--background":"@color__primary",
+            "color__feature-content--background":"@color-swatch4",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
             "color__feature-button--text": "#ffffff",
-            "color__feature-button--border": "#ffffff",
-            "color__feature-button--background": "transparent",
-            "color__feature-button--background--hover": "@color__primary",
+            "color__feature-button--border": "transparent",
+            "color__feature-button--background": "@color-swatch2",
+            "color__feature-button--background--hover": "darken(@color-swatch2, 10%)",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",
             "font__feature-headline--font-weight" : "@font-swatch8-font-weight",
@@ -239,9 +239,9 @@
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
         },
         "forms": {
-            "color__form--background": "transparent",
-            "color__form-legend--text": "@color-swatch4",
-            "color__form-label--text": "@font-swatch5-color"
+            "color__form--background": "@color-swatch3",
+            "color__form-legend--text": "@color-swatch1",
+            "color__form-label--text": "@color-swatch1"
         },
         "twitter": {
             "color__twitter--background": "@color-swatch1",

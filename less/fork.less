@@ -1,0 +1,133 @@
+// -----------------------------
+// 1.  #Header
+// -----------------------------
+
+.header-wrapper {
+    padding: 0 2%!important;
+    @media @tablet {
+        padding: 2%;
+    }
+}
+
+.header-extendednavigation {
+    margin: -6px;
+}
+
+.template-header {
+    background-color: @color__header--background!important;
+    min-height: 50px;
+}
+
+
+
+
+// -----------------------------
+// 2.  #Navigation
+// -----------------------------
+
+.navigation-list--children {
+    border: 0;
+    background-color: @color-swatch2;
+}
+
+.navigation-item .item-name {
+    padding: 10px 15px;
+}
+
+.navigation-list--children {
+    top: 90%;
+}
+
+.extendednavigation__navigation-item.selected > .item-name,
+.extendednavigation .navigation-item .item-name:hover {
+    background-color: lighten(@color__header--background, 10%);
+    @media @tablet {
+        background-color: transparent;    
+    }
+}
+
+.navigation-item.folder .navigation__item-name {
+    &:hover {
+        background-color: darken(@color-swatch2, 10%)!important;
+    }
+}
+
+// -----------------------------
+// 3.  #Feature
+// -----------------------------
+
+.feature__content-wrap {
+    background-color: fade(@color__feature-content--background, 70%);
+}
+
+.feature__background-image {
+    height: 100vh;
+}
+
+.feature__headline, .feature__strapline {
+    text-shadow: 2px 2px fade(#333333,30%);
+}
+
+// -----------------------------
+// 4.  #Button
+// -----------------------------
+
+.button.feature__button {
+    border: 0;
+    border-radius: 50px;
+    -webkit-box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+    box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+}
+
+// -----------------------------
+// 4.  #Contact Form
+// -----------------------------
+
+.contactform__legend {
+    background-color: lighten(@color__form--background, 10%);
+    margin-bottom: 20px;
+}
+
+.contactform__fieldset {
+    width: 100%;
+}
+
+.contactform__form-body {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.signupform__label:after, 
+.contactform__legend:after, 
+.blogsearch__legend:after {
+    display: none;
+}
+
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
+    padding: 20px;
+}
+
+input.input[type=email]:focus, 
+input.input[type=search]:focus, 
+.contact-form__textarea:focus,
+textarea:focus {
+    background-color: lighten(@color__form--background, 10%);
+    border-bottom: 1px solid transparent;
+    color: #ffffff;
+}
+
+input.input[type=email], 
+input.input[type=search], 
+.contact-form__textarea,
+textarea {
+    background-color: lighten(@color__form--background, 10%);
+    border-bottom: 1px solid transparent;
+    color: #ffffff;
+}
+
+// -----------------------------
+// 2.  #Navigation
+// -----------------------------
