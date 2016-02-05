@@ -7,7 +7,7 @@
 // -----------------------------
 
 .header-wrapper {
-    padding: 0 2%!important;
+    padding: 0 2%;
     @media @tablet {
         padding: 2%;
     }
@@ -15,6 +15,9 @@
 
 .header-extendednavigation {
     margin: -6px;
+    @media @tablet {
+        margin: 0;
+    }
 }
 
 .template-header {
@@ -56,6 +59,42 @@
     }
 }
 
+.navigation-toggle {
+    background-color: transparent;
+    box-shadow: none;
+    &:hover {
+        background-color: transparent;
+    }
+    &:before {
+        background: @color-swatch1;
+        box-shadow: 0 6px 0 @color-swatch1;
+    }
+    &:after {
+        background: @color-swatch1;
+    }
+}
+
+.open .navigation-body {
+    border: 0;
+}
+
+.open .navigation-toggle {
+    background-color: transparent;
+    &:before {
+        background: @color-swatch1;
+    }
+    &:after {
+        background: @color-swatch1;
+    }
+}
+
+.navigation-toggle:hover:before {
+    background-color: @color-swatch1;
+}
+
+.navigation-toggle:hover:after {
+    background-color: @color-swatch1;
+}
 
 
 
@@ -90,16 +129,18 @@
     box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
 }
 
-button, .button {
-    color: @color__button--text;
+.button, 
+button,
+.socialicons__social-link {
+    -webkit-box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+    -moz-box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+    box-shadow: 6px 6px 4px -3px rgba(0,0,0,0.11);
+    padding: 6px 20px;
 }
 
-.signupform__button,
-.blogsearch__button,
-.contactform__button {
-    color: #ffffff;
+.socialicons__social-link {
+    padding: 10px;
 }
-
 
 
 
@@ -131,6 +172,8 @@ button, .button {
 .contactform__legend, 
 .blogsearch__legend {
     padding: 20px;
+    font-size: @font-swatch3-font-size;
+    line-height: @font-swatch3-line-height;
 }
 
 input.input[type=email]:focus, 
@@ -179,16 +222,27 @@ textarea {
 }
 
 
+// -----------------------------
+// 2.  #Slideshow
+// -----------------------------
+
+.responsiveslideshow .pagination-item.selected .button--pagination,
+.listing-pagination .pagination-item.current a {
+    background-color: darken(@color-swatch2, 10%);
+}
+
+
 
 
 // -----------------------------
 // 2.  #Blog
 // -----------------------------
 
-.blogpostlist__title-link {
+.blogpostlist__title-link,
+.blogpost__post-attributes a, 
+.blogpostlist__post-excerpt a {
     color: @color__h1--text;
 }
-
 
 
 
@@ -206,10 +260,10 @@ textarea {
 }
 
 .ecomproductslist__product-item-title,
-.ecomproductslist__button,
 .ecomproduct__legend,
 .ecomproductslist__title-link,
-.ecomfeaturedproducts__title-link {
+.ecomfeaturedproducts__title-link,
+.ecomproduct__label {
     color: @color__h1--text;
 }
 
@@ -223,3 +277,38 @@ textarea {
 .ecomfeaturedproducts__listing-title:after {
     display: none;
 }
+
+.js-ecom-product-add-to-cart-btn {
+    &:hover {
+        background-color: darken(@color-swatch3, 10%);
+    }
+}
+
+.button--quantity {
+    background-color: @color__button--background;
+    &:hover {
+        background-color: @color__button--background--hover;
+    }
+}
+
+.quantity-wrap .button--quantity {
+    box-shadow: none;
+    border: 0;
+}
+
+.ecomproduct__legend, 
+.ecomproduct__label,
+td,
+th {
+    color: @color__p--text!important;
+}
+
+.ecomproductslist__listing-title {
+    margin-bottom: 20px;
+}
+
+.ecomproductslist__product-content,
+.ecomfeaturedproducts__product-content {
+    border: 0;
+}
+
