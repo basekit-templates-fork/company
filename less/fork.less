@@ -15,6 +15,7 @@
 // 7. #SLIDESHOW
 // 8. #BLOG
 // 9. #ECOMMERCE
+// 10. #FOOTER AND EXTRAS
 
 
 
@@ -245,6 +246,15 @@ textarea {
     background-color: darken(@color-swatch2, 10%);
 }
 
+.button.responsiveslideshow__next-button, 
+.button.responsiveslideshow__previous-button, 
+.button.responsiveslideshow__pause-toggle {
+    background-color: @color__button--background;
+    &:hover {
+        background-color: @color__button--background--hover;
+    }
+}
+
 
 
 
@@ -327,3 +337,18 @@ th {
     border: 0;
 }
 
+
+
+
+// -----------------------------
+// 10. Footer and Extras
+// -----------------------------
+
+.template-footer {
+    form {
+        background-color: transparent;
+    }
+    .signupform__label {
+        color: #ffffff;
+    }
+}
