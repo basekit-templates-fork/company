@@ -426,8 +426,9 @@ select {
 .ecomproductslist__listing-order {
     clear: both;
     padding: 0;
-    text-align: center;
-    margin-top: 20px;
+    @media @tablet {
+        text-align: center;
+    }
 }
 
 .ecombasketsummary__summary-title {

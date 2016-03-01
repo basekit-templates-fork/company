@@ -349,3 +349,123 @@ th {
         color: #ffffff;
     }
 }
+
+
+
+
+// -----------------------------
+// 10. FORK CHANGES
+// -----------------------------
+
+.product-gallery .gallery-item {
+    background-color: transparent;
+}
+
+.summary-table .summary-item-link {
+    background: transparent!important;
+}
+
+.ecombasketsummary__image {
+    max-width: 140px;
+    @media @mobile {
+        max-width: 100%;
+    }
+}
+
+.order-total {
+    @media @mobile {
+        font-size: 17px;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+}
+
+// Filters alignment
+.ecomproductslist__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+ 
+    @media @tablet {
+        display: block;
+        margin-bottom: 20px;
+    }
+ 
+    .fieldset--search,
+    .fieldset--filters {
+        -webkit-box-flex: 0;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+ 
+    .fieldset--search {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+ 
+// Search input alignment
+.ecomproductslist__fieldset--search {
+ 
+    .label--search {
+        @media @tablet {
+            display: none;
+            visibility: hidden;
+        }
+    }
+ 
+    // Brings input and search button inline
+    .ecomproductslist__form-body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        @media @mobile {
+            display: block;
+        }
+    }
+ 
+    // Makes input grow to fill space
+    .form-group {
+        &:first-child {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        }
+        &:last-child {
+            margin-right: 0;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0;
+            -ms-flex: 0;
+            flex: 0;
+        }
+    }
+ 
+    // Pushes button vertically inline with input
+    .ecomproductslist__button {
+        margin-top: 32px;
+ 
+        @media @tablet {
+            margin-top: 0;
+        }
+    }
+}
+
+.template-footer {
+    .twitter__tweet-item {
+        background-color: transparent;
+    }
+}
