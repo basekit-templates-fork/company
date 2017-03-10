@@ -150,24 +150,25 @@ button,
 // 5.  #Forms
 // -----------------------------
 
-.contactform__legend {
+.contactform__legend, .advancedcontactform__legend {
     background-color: lighten(@color__form--background, 10%);
     margin-bottom: 20px;
 }
 
-.contactform__fieldset {
+.contactform__fieldset, .advancedcontactform__fieldset {
     width: 100%;
     padding: 0 0 2%;
 }
 
-.contactform__form-body {
+.contactform__form-body, .advancedcontactform__form-body {
     width: 70%;
     margin: 0px auto;
 }
 
 .signupform__label:after, 
 .contactform__legend:after, 
-.blogsearch__legend:after {
+.blogsearch__legend:after,
+.advancedcontactform__legend:after {
     display: none;
 }
 
@@ -178,19 +179,34 @@ button,
     line-height: @font-swatch3-line-height;
 }
 
-.contactform__legend {
+.contactform__legend,
+.advancedcontactform__legend {
     padding: 20px;
     font-size: @font-swatch3-font-size;
     line-height: @font-swatch3-line-height;
 }
 
+.advancedcontactform__legend {
+    text-align: center;
+}
+
 input.input[type=email]:focus, 
 input.input[type=search]:focus, 
 .contact-form__textarea:focus,
-textarea:focus {
+textarea:focus,
+.advancedcontactform__select,
+.advancedcontactform__select:focus {
     background-color: lighten(@color__form--background, 10%);
     border-bottom: 1px solid transparent;
     color: #ffffff;
+}
+
+.advancedcontactform__select {
+    border: none;
+    &:hover {
+        background-color: lighten(@color__form--background, 7%);
+        color: #ffffff;
+    }
 }
 
 input.input[type=email], 
